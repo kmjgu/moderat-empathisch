@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatti</title>
+  <title>Toni</title>
 
   <style>
     body {
@@ -208,7 +208,7 @@
         el.classList.add("bot-message-container");
 
         el.innerHTML = `
-          <div class="bot-name">Chatti:</div>
+          <div class="bot-name">Toni:</div>
           <div class="bot-message">${escapeHtml(text)}</div>
         `;
 
@@ -223,7 +223,7 @@
         typingIndicator.classList.add("bot-message-container");
 
         typingIndicator.innerHTML = `
-          <div class="bot-name">Chatti:</div>
+          <div class="bot-name">Toni:</div>
           <div class="bot-message typing-message">schreibt ...</div>
         `;
 
@@ -241,7 +241,8 @@
       async function loadChat() {
         messagesContainer.innerHTML = "";
         chatHistory = [];
-        addBotMessage("Hallo! Schön, dass du da bist. Womit kann ich dir helfen?");
+        addBotMessage("Hey, ich hoffe dir geht's gut. Ich würde gerne mit dir über das Thema Stress im Alltag reden."
+                      "Erzähl mir doch gerne mal, wann und wieso du das letzte Mal eine stressige Situation erlebt hast.");
       }
 
       async function sendMessage() {
@@ -316,10 +317,10 @@
 <body>
   <div class="chat-container">
     <div class="chat-header">
-      <img src="/static/chattiHFI.png" alt="Chatti">
+      <img src="/static/chattiHFI.png" alt="Toni">
 
       <div class="header-text">
-        <div class="header-title">Chatti</div>
+        <div class="header-title">Toni</div>
       </div>
     </div>
 
